@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 
 const Home = () => {
   return (
-    <div className="px-8 py-4">
+    <div className="home ">
       <Navbar />
       <Landing />
       <Skills />

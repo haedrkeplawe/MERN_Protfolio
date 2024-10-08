@@ -2,16 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-blue: #67e8f9;
+  --main-dark: #111827;
+}
+body {
+  color: white;
+  background-color: black;
+}
+/* home */
+.home {
+  padding: 16px;
+}
+/* nav */
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 16px 16px;
+}
+nav .text {
+  color: var(--main-blue);
+}
+nav ul {
+  display: flex;
+  gap: 12px;
+}
+nav ul a {
+  transition: 0.8s;
+}
+nav ul a:hover {
+  color: var(--main-blue);
+}
 /* about */
 .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 128px 16px;
+  gap: 10px;
 }
-.about h2 {
+.about .text h2 {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  position: relative;
+  transition: 0.5s;
+  right: 320px;
+  transition-delay: 0.7s;
+}
+.about .text p {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  right: 24rem;
+  transition: 1s;
+  transition-delay: 1s;
 }
 .about .image {
   position: relative;
@@ -25,4 +69,62 @@
 }
 .about .image:hover > div {
   border-radius: 42% 0% 44% 0%;
+}
+.about .image img {
+  position: relative;
+  transition: 1s;
+  transition-delay: 1.3s;
+  transform: translateY(420px);
+}
+/* skell */
+.skell {
+  padding: 0 16px;
+  max-width: 768px;
+}
+.skell > h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.skell > div {
+  padding: 40px 0;
+}
+.skell .unit span.one {
+  height: 24px;
+  width: 100%;
+  background-color: var(--main-dark);
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.skell .unit span.two {
+  height: 100%;
+  display: block;
+  background-color: var(--main-blue);
+}
+/* prject */
+.project {
+  padding: 0 16px;
+}
+.project > h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.cart {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: #111827;
+}
+.cart img {
+  width: 100%;
+  height: 208px;
+  border-radius: 0.5rem;
+}
+.cart h2 {
+  margin: 10px 10px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.cart a {
+  color: var(--main-blue);
 }
