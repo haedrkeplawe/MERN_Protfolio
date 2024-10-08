@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* about */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 128px 16px;
+}
+.about h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.about .image {
+  position: relative;
+}
+.about .image > div {
+  border-radius: 30% 30% 30% 30%;
+  overflow: hidden;
+  transition: 0.8s;
+  border: 1px solid;
+  background: linear-gradient(29deg, rgb(0, 217, 255), rgb(0, 60, 255));
+}
+.about .image:hover > div {
+  border-radius: 42% 0% 44% 0%;
+}
