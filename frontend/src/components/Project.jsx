@@ -41,8 +41,8 @@ const Project = () => {
         />
         <Cart
           image={image6}
-          Name={"Workout"}
-          link={"https://haedrworkout.netlify.app"}
+          Name={"Workout Buddy-Coatch"}
+          link={"https://workout-buddy-1.netlify.app"}
         />
         <Cart
           image={image7}
