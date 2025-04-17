@@ -8,6 +8,7 @@ import image5 from "../image/prdouct_5.png";
 import image6 from "../image/prdouct_6.png";
 import image7 from "../image/prdouct_7.png";
 import image8 from "../image/prdouct_8.png";
+import image9 from "../image/prdouct_9.png";
 
 const Project = () => {
   return (
@@ -27,6 +28,14 @@ const Project = () => {
           skils={["React", "express", "mongodb"]}
           links={["https://haedrcompane.netlify.app/"]}
           linksName={["DNK"]}
+        />
+         <Cart
+          image={image9}
+          Name={"X-Clone"}
+          discrption={"X-Clone its look like X"}
+          skils={["react", "express", "mongodb"]}
+          links={["https://deluxe-longma-19b255.netlify.app/"]}
+          linksName={["X-Clone"]}
         />
         <Cart
           image={image2}
